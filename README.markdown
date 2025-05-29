@@ -153,4 +153,4 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 - **LangChain**: For document processing and embeddings.
 
 ## Contact
-For questions or feedback, open an issue or contact [your-email@example.com](mailto:your-email@example.com).
+For questions or feedback, open an issue or contact [saikumarjarugumalli@gmail.com).
