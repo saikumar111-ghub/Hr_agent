@@ -1,0 +1,10 @@
+crewai
+crewai_tools
+langchain
+langchain-ollama
+python-dotenv
+litellm
+PyPDF2
+python-docx
+chromadb
+pydantic
