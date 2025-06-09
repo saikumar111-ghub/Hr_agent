@@ -65,7 +65,9 @@ Unlike traditional RAG, this system uses a multi-agent architecture, with a **Re
 - Place PDF documents in the `data` folder (e.g., `data/Hr Policies.pdf`).
 - Run the ingestion script to process PDFs and store chunks in ChromaDB:
   ```bash
-  python ingest.py
+  python ingest.py 
+   or
+   embeddings.py (Updated to verify the condition of the PDF. This prevents us from processing the same PDF twice, thereby saving time and ensuring our database remains free of duplicates. It is a straightforward adjustment that integrates seamlessly with our existing setup.)
   ```
 - Output example:
   ```
