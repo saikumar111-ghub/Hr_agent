@@ -69,7 +69,7 @@ Unlike traditional RAG, this system uses a multi-agent architecture, with a **Re
    or
    embeddings.py (Updated to verify the condition of the PDF. This prevents us from processing the same PDF twice, thereby saving time and ensuring our database remains free of duplicates. It is a straightforward adjustment that integrates seamlessly with our existing setup.)
   ```
-- Output example:
+- Output example: ingest.py
   ```
   Processing data\Hr Policies.pdf...
   Loaded 19 pages from Hr Policies.pdf
@@ -77,6 +77,69 @@ Unlike traditional RAG, this system uses a multi-agent architecture, with a **Re
   Stored 19 chunks for Hr Policies.pdf
   Collection count after storage: 19
   ```
+- output example : embeddings.py
+   (venv) PS C:\Users\SaikumarJarugumalli\Desktop\HR_Agent> python embeddings.py
+Processing data\Hr Policies.pdf...
+Skipping data\Hr Policies.pdf as it has already been processed.
+Processing data\Human-Resources-Policy.pdf...
+Loaded 31 pages from Human-Resources-Policy.pdf
+Sample text: POLICY 
+ 
+ 
+HUMAN RESOURCES  
+ 
+ 
+
+
+
+
+April 2019
+Split into 31 chunks
+Chunk 0 embedding generated, length: 768
+Chunk 1 embedding generated, length: 768
+Chunk 2 embedding generated, length: 768
+Chunk 3 embedding generated, length: 768
+Chunk 4 embedding generated, length: 768
+Chunk 5 embedding generated, length: 768
+Chunk 6 embedding generated, length: 768
+Chunk 7 embedding generated, length: 768
+Chunk 8 embedding generated, length: 768
+Chunk 9 embedding generated, length: 768
+Chunk 10 embedding generated, length: 768
+Chunk 11 embedding generated, length: 768
+Chunk 12 embedding generated, length: 768
+Chunk 13 embedding generated, length: 768
+Chunk 14 embedding generated, length: 768
+Chunk 15 embedding generated, length: 768
+Chunk 16 embedding generated, length: 768
+Chunk 17 embedding generated, length: 768
+Chunk 18 embedding generated, length: 768
+Chunk 19 embedding generated, length: 768
+Chunk 20 embedding generated, length: 768
+Chunk 21 embedding generated, length: 768
+Chunk 22 embedding generated, length: 768
+Chunk 23 embedding generated, length: 768
+Chunk 24 embedding generated, length: 768
+Chunk 25 embedding generated, length: 768
+Chunk 25 embedding generated, length: 768
+Chunk 26 embedding generated, length: 768
+Chunk 27 embedding generated, length: 768
+Chunk 25 embedding generated, length: 768
+Chunk 26 embedding generated, length: 768
+Chunk 27 embedding generated, length: 768
+Chunk 28 embedding generated, length: 768
+Chunk 25 embedding generated, length: 768
+Chunk 26 embedding generated, length: 768
+Chunk 27 embedding generated, length: 768
+Chunk 26 embedding generated, length: 768
+Chunk 27 embedding generated, length: 768
+Chunk 28 embedding generated, length: 768
+Chunk 29 embedding generated, length: 768
+Chunk 30 embedding generated, length: 768
+Stored 31 chunks for Human-Resources-Policy.pdf
+Collection count after storage: 50
+Marked Human-Resources-Policy.pdf as processed.
+PDF files ingestion completed successfully 
 
 ### 2. Query the HR Agent
 - Run the crew to answer queries:
